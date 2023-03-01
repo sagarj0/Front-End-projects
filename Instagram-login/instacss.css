@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   margin: auto;
   font-family: sans-serif;
-  font-size: 87%;
+  font-size: 85%;
   /* line-height: 50%; */
 }
 
@@ -85,7 +85,7 @@ body {
   background-color: rgb(250, 250, 250);
   border: 1px solid rgb(220, 220, 220);
   border-radius: 3px;
-  /* color: rgb(220, 220, 220); */
+  /* color: rgba(220, 220, 220, 0.712); */
 }
 .button {
   width: 100%;
@@ -115,6 +115,7 @@ body {
 .or2 {
   margin: 0 20px;
   font-size: 13px;
+  color: #ffffff7e;
 }
 
 .flex {
@@ -146,7 +147,7 @@ body {
 .forgot-password:active,
 .forgot-password:visited {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 12px;
   margin-bottom: 20px;
   color: rgb(0, 55, 107);
@@ -154,6 +155,12 @@ body {
 
 .ch-2 {
   text-align: center;
+}
+
+.sign-up {
+  color: rgb(0, 149, 246);
+  text-decoration: none;
+  font-weight: 550;
 }
 
 .get-app {
