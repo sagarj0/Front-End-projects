@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="freecss.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div>
+      <header class="header">
+        <h1 id="title">yep its freeCodeCamp's idea</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <div class="form">
+        <form id="survey-form">
+          <div>
+            <label id="name-label" for="name"
+              >Name<input
+                id="name"
+                type="text"
+                placeholder="Enter name"
+                required
+            /></label>
+          </div>
+
+          <div>
+            <label id="email-label"
+              >Email<input
+                id="email"
+                type="email"
+                placeholder="Enter email"
+                required
+            /></label>
+          </div>
+
+          <div>
+            <label id="number-label" for="number"
+              >Age(optional)
+              <input
+                id="number"
+                type="number"
+                min="13"
+                max="120"
+                placeholder="Enter age"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label
+              >which option best describes your current role?
+              <select id="dropdown">
+                <option>select</option>
+                <option>student</option>
+                <option>teacher</option>
+                <option>other</option>
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <p>would you recommend freecodecamp to friend</p>
+            <label>
+              <input
+                name="choice"
+                type="radio"
+                value="yes"
+                class="inline"
+              />yes</label
+            >
+            <label
+              ><input
+                name="choice"
+                type="radio"
+                value="no"
+                class="inline"
+              />No</label
+            >
+            <label
+              ><input
+                name="choice"
+                type="radio"
+                value="maybe"
+                class="inline"
+              />maybe</label
+            >
+          </div>
+
+          <div>
+            <p>What would you like to see improved</p>
+            <label
+              ><input
+                type="checkbox"
+                name="improvement"
+                value="front-end"
+                class="inline"
+              />front-end</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="improvement"
+                value="back-end"
+                class="inline"
+              />back-end</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="improvement"
+                value="data-visualization"
+                class="inline"
+              />data viualization</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="improvement"
+                value="video"
+                class="inline"
+              />video</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="improvement"
+                value="challange"
+                class="inline"
+              />challanges</label
+            >
+          </div>
+
+          <div>
+            <p>Any comment?</p>
+            <p>
+              <textarea
+                id="comment"
+                placeholder="Enter your comment:"
+              ></textarea>
+            </p>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+        <p class="copyright">
+          Only layout is copied from freecode camp.
+          <a
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+            target="_blank"
+            >here</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
