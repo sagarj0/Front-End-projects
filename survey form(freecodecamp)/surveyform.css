@@ -1,0 +1,84 @@
+body {
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-image: linear-gradient(
+      rgba(27, 31, 93, 0.78),
+      rgba(27, 31, 93, 0.78)
+    ),
+    url(bgimg.webp);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.header {
+  text-align: center;
+}
+
+#title {
+  font-family: Arial;
+}
+
+.header p {
+  font-style: italic;
+}
+
+form {
+  width: 50%;
+  background-color: rgba(32, 32, 96, 0.8);
+  padding: 45px;
+  margin: auto;
+  max-width: 800px;
+  min-width: 450px;
+  border-radius: 5px;
+}
+
+label {
+  margin: auto;
+  width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 5px 30px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  background-color: #000000cf;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  background-color: rgb(53, 53, 53);
+  border: 1px solid rgb(150, 150, 150);
+}
+.inline {
+  width: unset;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 10px 10px 0;
+  width: 18px;
+  height: 18px;
+}
+
+input[type="submit"] {
+  background-color: rgba(75, 226, 226, 0.925);
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+}
