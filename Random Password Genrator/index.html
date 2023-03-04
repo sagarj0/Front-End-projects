@@ -10,17 +10,34 @@
   </head>
 
   <body>
-    <div class="main">
-      <label class="heading" for="password">
-        Random Password Genrator
-        <input
-          class="input"
-          type="text"
-          placeholder="generate password"
-          id="password"
-          readonly
-        />
-      </label>
+    <div class="container">
+      <h3 class="heading">Random Password Genrator</h3>
+      <div class="main">
+        <div>
+          <label for="length">Length</label>
+          <select id="length" class="select">
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="12" selected>12</option>
+            <option value="16">16</option>
+            <option value="24">24</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="password">
+            Password
+            <input
+              class="input"
+              type="text"
+              placeholder="Generate Password"
+              id="password"
+              readonly
+            />
+          </label>
+        </div>
+      </div>
+
       <button class="button" onclick="randomPasswordGen()">Generate</button>
     </div>
   </body>
