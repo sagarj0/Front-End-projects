@@ -1,4 +1,3 @@
-// var password = document.getElementById("password");
 
 var numbers = "0123456789";
 var symbols = "`~!@#$%^&*()_+-={}|[]:\";':<,>.?/";
