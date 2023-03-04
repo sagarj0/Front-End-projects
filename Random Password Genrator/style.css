@@ -1,30 +1,46 @@
 body {
-  background-color: rgba(3, 146, 146, 0.692);
+  background-color: rgba(9, 147, 182, 0.692);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
 }
 
-.main {
+.container {
   background-color: rgba(100, 21, 74, 0.568);
   text-align: center;
   width: fit-content;
   box-sizing: border-box;
-  padding: 60px 80px;
+  padding: 40px 80px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
 }
 
 .heading {
-  font-size: 25px;
+  font-size: 28px;
+  margin-top: 0;
 }
 
-.input {
+label {
+  color: rgb(214, 226, 43);
+  font-weight: bold;
+}
+
+.input,
+.select {
   display: block;
-  width: 100%;
   box-sizing: border-box;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 5px;
   border-radius: 8px;
   background-color: rgb(240, 255, 37);
   border: 2px solid rgb(238, 255, 0);
@@ -32,21 +48,27 @@ body {
   padding: 8px;
 }
 
-.input::placeholder {
+input:focus,
+select:focus {
+  outline: none;
+}
+
+/* .input::placeholder {
   padding: 8px;
   font-size: 15px;
   color: rgb(0, 0, 0);
-}
+} */
 
 .button {
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 18px;
   height: 50px;
-  width: 100px;
+  width: 150px;
   background-color: rgb(52, 165, 42);
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  align-self: center;
 }
 
 .button:hover {
