@@ -1,14 +1,17 @@
 
-var numbers = "0123456789";
-var symbols = "`~!@#$%^&*()_+-={}|[]:\";':<,>.?/";
-var sletter = "abcdefghijklmnopqrstuvwxyz";
-var cletter = sletter.toUpperCase();
-var passlength = 12;
+var numbers = "0123456789",
+  symbols = "`~!@#$%^&*()_+-={}|[]:\";':<,>.?/",
+  sletter = "abcdefghijklmnopqrstuvwxyz",
+  cletter = sletter.toUpperCase();
 
 function randomPasswordGen() {
   var password = "";
-
-  for (var i = 0; i <= passlength / 4; i++) {
+  // var passlength = ;
+  for (
+    var i = 1;
+    i <= Number(document.getElementById("length").value) / 4;
+    i++
+  ) {
     var randno = Math.floor(Math.random() * numbers.length);
     password += numbers.slice(randno, randno + 1);
 
@@ -24,4 +27,4 @@ function randomPasswordGen() {
   document.getElementById("password").value = password;
 }
 
-// console.log(randomPasswordGen());
+// console.log(document.getElementById("password").value);
