@@ -4,6 +4,8 @@ var numbers = "0123456789",
   sletter = "abcdefghijklmnopqrstuvwxyz",
   cletter = sletter.toUpperCase();
 
+// console.log(document.getElementById("type").value);
+
 function randomPasswordGen() {
   var password = "";
   // var passlength = ;
@@ -24,7 +26,25 @@ function randomPasswordGen() {
     var randno = Math.floor(Math.random() * cletter.length);
     password += cletter.slice(randno, randno + 1);
   }
-  document.getElementById("password").value = password;
+  document.getElementById("passPin").value = password;
 }
 
-// console.log(document.getElementById("password").value);
+function randomPinGen() {
+  var password = "";
+  for (var i = 1; i <= 4; i++) {
+    var randno = Math.floor(Math.random() * numbers.length);
+    password += numbers.slice(randno, randno + 1);
+  }
+  document.getElementById("passPin").value = password;
+}
+
+function gen() {
+  if (document.getElementById("type").value == "Password") {
+    randomPasswordGen();
+  }
+  if (document.getElementById("type").value == "Pin") {
+    randomPinGen();
+  }
+}
+
+// button.addEventListener("click", gen());
