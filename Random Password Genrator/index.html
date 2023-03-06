@@ -6,39 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <title>Random Password Genrator</title>
+    <title>Random Password/Pin Genrator</title>
   </head>
 
   <body>
     <div class="container">
-      <h3 class="heading">Random Password Genrator</h3>
+      <h3 class="heading">Random Password/Pin Genrator</h3>
       <div class="main">
+        <div>
+          <label>select</label>
+          <select id="type" class="select">
+            <option value="Password" selected>Password</option>
+            <option value="Pin">Pin</option>
+          </select>
+        </div>
+
         <div>
           <label for="length">Length</label>
           <select id="length" class="select">
-            <option value="4">4</option>
+            <!-- <option value="4">4</option> -->
             <option value="8">8</option>
             <option value="12" selected>12</option>
             <option value="16">16</option>
             <option value="24">24</option>
+            <option value="36">36</option>
           </select>
         </div>
 
         <div>
           <label for="password">
-            Password
+            Password/Pin
             <input
               class="input"
               type="text"
               placeholder="Generate Password"
-              id="password"
+              id="passPin"
               readonly
             />
           </label>
         </div>
       </div>
 
-      <button class="button" onclick="randomPasswordGen()">Generate</button>
+      <button class="button" id="button1" onclick="gen()">Generate</button>
     </div>
   </body>
 </html>
