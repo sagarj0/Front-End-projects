@@ -1,5 +1,5 @@
 
-var numbers = "0123456789",
+const numbers = "0123456789",
   symbols = "`~!@#$%^&*()_+-={}|[]:\";':<,>.?/",
   sletter = "abcdefghijklmnopqrstuvwxyz",
   cletter = sletter.toUpperCase();
