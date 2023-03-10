@@ -4,7 +4,6 @@ const numbers = "0123456789",
   sletter = "abcdefghijklmnopqrstuvwxyz",
   cletter = sletter.toUpperCase();
 
-// console.log(document.getElementById("type").value);
 
 function randomPasswordGen() {
   var password = "";
@@ -46,5 +45,3 @@ function gen() {
     randomPinGen();
   }
 }
-
-// button.addEventListener("click", gen());
