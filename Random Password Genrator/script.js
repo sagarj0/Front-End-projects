@@ -1,9 +1,7 @@
-
 const numbers = "0123456789",
   symbols = "`~!@#$%^&*()_+-={}|[]:\";':<,>.?/",
   sletter = "abcdefghijklmnopqrstuvwxyz",
   cletter = sletter.toUpperCase();
-
 
 function randomPasswordGen() {
   var password = "";
@@ -37,11 +35,13 @@ function randomPinGen() {
   document.getElementById("passPin").value = password;
 }
 
-function gen() {
+let gen = function () {
   if (document.getElementById("type").value == "Password") {
     randomPasswordGen();
   }
   if (document.getElementById("type").value == "Pin") {
     randomPinGen();
   }
-}
+};
+
+document.querySelector("#button1").addEventListener("click", gen);
