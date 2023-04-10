@@ -54,11 +54,11 @@ const freqRatio = Math.pow(2, 1 / 12);
 // console.log(freqRatio);
 
 for (; i < 12; i++) {
-  const btn = document.querySelector(`.key${i + 1}`);
+  let btn = document.querySelector(`.key${i + 1}`);
 
   let freq = b3 * Math.pow(freqRatio, i);
 
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", () => {
     const synth = new Tone.Synth().toDestination();
 
     // let newNote = refC4 * keyNo;
