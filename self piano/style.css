@@ -34,7 +34,7 @@ body {
   gap: 1px;
 }
 
-.key.white {
+.white {
   width: 34px;
   height: 175px;
   background-color: #ccc;
@@ -51,7 +51,7 @@ body {
   margin-left: 23px;
 }
 
-.key.black {
+.black {
   width: 24px;
   height: 100px;
   background-color: #111;
