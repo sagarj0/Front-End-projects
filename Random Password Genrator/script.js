@@ -4,10 +4,10 @@ const numbers = "0123456789",
   cletter = sletter.toUpperCase();
 
 function randomPasswordGen() {
-  var password = "";
+  let password = "";
   // var passlength = ;
   for (
-    var i = 1;
+    let i = 1;
     i <= Number(document.getElementById("length").value) / 4;
     i++
   ) {
@@ -27,9 +27,9 @@ function randomPasswordGen() {
 }
 
 function randomPinGen() {
-  var password = "";
+  let password = "";
   for (var i = 1; i <= 4; i++) {
-    var randno = Math.floor(Math.random() * numbers.length);
+    let randno = Math.floor(Math.random() * numbers.length);
     password += numbers.slice(randno, randno + 1);
   }
   document.getElementById("passPin").value = password;
