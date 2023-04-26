@@ -3,7 +3,7 @@
 let keys = document.querySelector(".keys");
 
 let octave_no;
-for (octave_no = 1; octave_no <= 1; octave_no++) {
+for (octave_no = 1; octave_no <= 4; octave_no++) {
   keys.innerHTML += `
   <div class="octaves">
           <div class="white-keys">
