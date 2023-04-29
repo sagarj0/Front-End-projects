@@ -5,7 +5,7 @@
 let keys = document.querySelector(".keys");
 
 let octave_no;
-for (octave_no = 1; octave_no <= 5; octave_no++) {
+for (octave_no = 1; octave_no <= 4; octave_no++) {
   keys.innerHTML += `
   <div class="octaves">
           <div class="white-keys">
@@ -55,7 +55,7 @@ const freqRatio = Math.pow(2, 1 / 12);
 for (; i < 12; i++) {
   let newFreq = c2 * Math.pow(freqRatio, i);
 
-  for (octave_no = 0; octave_no < 5; octave_no++) {
+  for (octave_no = 0; octave_no < 4; octave_no++) {
     let freq = newFreq * Math.pow(2, octave_no);
     let btn = document.querySelector(`.key${octave_no + 1}${i + 1}`);
 
