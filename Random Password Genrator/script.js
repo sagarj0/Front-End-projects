@@ -4,10 +4,10 @@ const numbers = "0123456789",
   cletter = sletter.toUpperCase();
 
 function randomPasswordGen() {
-  let password = "";
+  var password = "";
   // var passlength = ;
   for (
-    let i = 1;
+    var i = 1;
     i <= Number(document.getElementById("length").value) / 4;
     i++
   ) {
@@ -24,24 +24,28 @@ function randomPasswordGen() {
     password += cletter.slice(randno, randno + 1);
   }
   document.getElementById("passPin").value = password;
+  // console.log(password);
 }
 
 function randomPinGen() {
-  let password = "";
+  var password = "";
   for (var i = 1; i <= 4; i++) {
-    let randno = Math.floor(Math.random() * numbers.length);
+    var randno = Math.floor(Math.random() * numbers.length);
     password += numbers.slice(randno, randno + 1);
   }
   document.getElementById("passPin").value = password;
 }
 
-let gen = function () {
-  if (document.getElementById("type").value == "Password") {
-    randomPasswordGen();
-  }
-  if (document.getElementById("type").value == "Pin") {
+const adapter = function () {
+  if (document.querySelector("#type").value == "Pin") {
+    document.querySelector(".length-selector").classList.add("hidden");
+
     randomPinGen();
+  } else if (document.querySelector("#type").value == "Password") {
+    document.querySelector(".length-selector").classList.remove("hidden");
+
+    randomPasswordGen();
   }
 };
 
-document.querySelector("#button1").addEventListener("click", gen);
+document.querySelector("#button1").addEventListener("click", adapter);
