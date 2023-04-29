@@ -1,7 +1,5 @@
 "use strict";
 
-// const { Tone } = require("tone/build/esm/core/Tone");
-
 let keys = document.querySelector(".keys");
 
 let octave_no;
@@ -29,25 +27,6 @@ for (octave_no = 1; octave_no <= 4; octave_no++) {
   `;
 }
 
-// console.log(Tone.js);
-
-// import * as Tone from "tone";
-
-// let synth = Tone.Synth().toDestination();
-
-// // Play a note
-
-// console.log(Tone.context.state);
-
-// let c4synth = function () {
-//   // if (Tone.context.state != "running") {
-//   //   Tone.start();
-//   // }
-
-//   // AudioContext().resume();
-// };
-
-// c4synth();
 let i = 0;
 let c2 = 65.40639;
 
@@ -67,29 +46,3 @@ for (; i < 12; i++) {
     });
   }
 }
-
-// console.log(freqRatio);
-
-// for (; i < 12; i++) {
-// let btn = document.querySelectorAll(`.key${i + 1}`);
-
-//   let freq = b3 * Math.pow(freqRatio, i);
-
-//   for (octave_no = 0; octave_no < 4; octave_no++) {
-//     btn[octave_no].addEventListener("click", () => {
-// const synth = new Tone.Synth().toDestination();
-
-//       // let newNote = refC4 * keyNo;
-
-//       console.log(btn[octave_no]);
-//       synth.triggerAttackRelease(freq, "8n");
-//       console.log(freq);
-//     });
-//   }
-//   // console.log(btn.innerHTML);
-//   // console.log(freq);
-
-//   // console.log(btn);
-// }
-
-// console.log(btn);
