@@ -47,7 +47,7 @@ for (; i < 12; i++) {
       synth.triggerAttackRelease(freq, "8n");
 
       // console.log(btn);
-      console.log(freq);
+      // console.log(freq);
     });
   }
 }
